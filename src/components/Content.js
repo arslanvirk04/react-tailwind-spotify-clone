@@ -11,8 +11,8 @@ function Content() {
 			<Navbar />
 			<div className="px-8 py-5">
 				<Switch>
-					<Route exact path="/">
-						<Home />
+					<Route exact path="/home">
+						<Home /> 
 					</Route>
 					<Route path="/search">
 						<Search />

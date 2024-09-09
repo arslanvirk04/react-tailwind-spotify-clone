@@ -14,8 +14,12 @@ function Player() {
     const isFullscreen = useFullscreen(fsRef, show, {onClose: () => toggle(false)});
 
     const dispatch = useDispatch()
+    const logic = useSelector(state => state)
     const {current, sidebar} = useSelector(state => state.player)
+    console.log("current in Player", current);
+    console.log("logic in Player", logic);
 
+ 
     const [audio, state, controls, ref] = useAudio({
         src: current?.src
     });

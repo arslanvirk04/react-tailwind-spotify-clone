@@ -6,6 +6,7 @@ function SidebarCover() {
 
     const dispatch = useDispatch()
     const current = useSelector(state => state.player.current)
+    console.log("current in sidebar", current);
 
     return (
         <div className="pt-[100%] relative bg-black group">

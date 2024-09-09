@@ -8,7 +8,7 @@ function Home() {
 			<Section
 				title="Recently played"
 				more="/blabla"
-				items={songs}
+				items={songs} 
 			/>
 			<Section
 				title="Shows to try"
